@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Update apt cache.
+sudo apt-get update
+
+# Install Nginx.
+sudo apt-get install -y nginx
+
+# Set the home page.
+echo "<html><title><h2>Welcome to the playpen f@*%ers! My name is $(hostname).</h2></title><body><img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.imgflip.com%2Fzi5tp.jpg&imgrefurl=https%3A%2F%2Fimgflip.com%2Fi%2Fzi5tp&docid=vfY9tp6m1IbLYM&tbnid=7OcfYiC1wN8S7M%3A&vet=10ahUKEwj99cW4l_vhAhWhyqYKHdTRCXMQMwhOKAIwAg..i&w=500&h=437&bih=1045&biw=1184&q=information%20security%20meme&ved=0ahUKEwj99cW4l_vhAhWhyqYKHdTRCXMQMwhOKAIwAg&iact=mrc&uact=8" alt="Picutre here" width=400 height=400></body></html>" | sudo tee -a /var/www/html/index.html
